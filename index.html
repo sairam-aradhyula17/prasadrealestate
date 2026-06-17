@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prasad Real Estate | Real Estate Website</title>
+  <meta name="description" content="Buy, sell, and invest in trusted properties.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <span>📍 <span data-address></span>Tadepalligudem, West Godavari, Andhra Pradesh</span>
+      <span>📞 <span data-phone>+91 9866830856</span> | ✉️ <span data-email>aradhyulaprasad@gmail.com</span></span>
+    </div>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span class="logo-mark">PR</span><span data-business-name>Prasad Real Estate</span></a>
+      <button class="menu-btn" id="menuBtn">Menu</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary" data-whatsapp-link target="_blank" href="#">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="badge">🏡 Trusted Local Real Estate</div>
+        <h1>Find Your Dream Property</h1>
+        <p>Buy, sell, and invest in trusted plots, houses, lands, apartments, and commercial spaces.</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="properties.html">Explore Properties</a>
+          <a class="btn btn-secondary" data-whatsapp-link target="_blank" href="#">Contact on WhatsApp</a>
+        </div>
+
+        <form class="search-panel" id="homeSearch">
+          <div class="field">
+            <label>Property Type</label>
+            <select id="homeType">
+              <option value="">All Types</option>
+              <option value="Plot">Plot</option>
+              <option value="House">House</option>
+              <option value="Apartment">Apartment</option>
+              <option value="Land">Land</option>
+              <option value="Commercial">Commercial</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Location</label>
+            <input id="homeLocation" type="text" placeholder="Ex: Tadepalligudem">
+          </div>
+          <div class="field">
+            <label>Budget</label>
+            <select id="homeBudget">
+              <option value="">Any Budget</option>
+              <option value="low">Below ₹20 Lakhs</option>
+              <option value="mid">₹20L - ₹50L</option>
+              <option value="high">Above ₹50 Lakhs</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="container stats">
+      <div class="card stat-card"><strong>150+</strong><span>Happy Clients</span></div>
+      <div class="card stat-card"><strong>60+</strong><span>Properties Listed</span></div>
+      <div class="card stat-card"><strong>12+</strong><span>Local Areas</span></div>
+      <div class="card stat-card"><strong>24/7</strong><span>WhatsApp Support</span></div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Featured</div>
+            <h2 class="section-title">Featured Properties</h2>
+          </div>
+          <a class="btn btn-outline" href="properties.html">View All</a>
+        </div>
+        <div class="grid grid-3" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#fff;">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Why Choose Us</div>
+            <h2 class="section-title">Simple, transparent, and trusted service</h2>
+            <p class="section-text">We help buyers and sellers with clear property details, site visit support, price guidance, and quick communication.</p>
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <div class="card why-card"><div class="icon-box">✅</div><h3>Verified Details</h3><p>We show important property information clearly so buyers can decide confidently.</p></div>
+          <div class="card why-card"><div class="icon-box">📍</div><h3>Local Area Focus</h3><p>Properties are organized by location, budget, type, and size for easy search.</p></div>
+          <div class="card why-card"><div class="icon-box">💬</div><h3>Quick Enquiry</h3><p>Floating WhatsApp and call buttons help users contact you instantly.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Latest</div>
+            <h2 class="section-title">Recent Properties</h2>
+          </div>
+        </div>
+        <div class="grid grid-3" id="recentGrid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta">
+        <div>
+          <h2>Want to buy or sell a property?</h2>
+          <p>Share your requirement on WhatsApp. We will contact you with available options.</p>
+        </div>
+        <a class="btn btn-secondary" data-whatsapp-link target="_blank" href="#">Start WhatsApp Chat</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3 data-business-name></h3><p>Trusted local real estate service for plots, houses, lands, apartments, and commercial spaces.</p></div>
+      <div><h3>Quick Links</h3><div class="footer-links"><a href="index.html">Home</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
+      <div><h3>Property Types</h3><div class="footer-links"><a href="properties.html">Plots</a><a href="properties.html">Houses</a><a href="properties.html">Lands</a><a href="properties.html">Commercial</a></div></div>
+      <div><h3>Contact</h3><p data-address></p><p data-phone></p><p data-email></p></div>
+    </div>
+    <div class="container copyright">© <span data-year></span> <span data-business-name></span>. All rights reserved.</div>
+  </footer>
+
+  <a class="float-whatsapp" data-whatsapp-link target="_blank" href="#">💬</a>
+  <a class="float-call" data-phone-link href="#">☎</a>
+
+  <script src="properties.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

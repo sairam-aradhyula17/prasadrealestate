@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Prasad Real Estate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar"><div class="container"><span>📍 <span data-address>Tadepalligudem, West Godavari, Andhra Pradesh</span></span><span>📞 <span data-phone>+91 9866830856</span> | ✉️ <span data-email>aradhyulaprasad@gmail.com</span></span></div></div>
+  <header class="navbar"><div class="container nav-wrap"><a class="logo" href="index.html"><span class="logo-mark">PR</span><span data-business-name>Prasad Real Estate</span></a><button class="menu-btn" id="menuBtn">Menu</button><nav class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="btn btn-primary" data-whatsapp-link target="_blank" href="#">WhatsApp</a></nav></div></header>
+
+  <main>
+    <section class="page-header"><div class="container"><h1>Contact Us</h1><p>Call, WhatsApp, or send an enquiry for property details and site visits.</p></div></section>
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="card contact-box">
+          <div class="section-kicker">Get In Touch</div>
+          <h2 class="section-title">Send Enquiry</h2>
+          <p class="section-text">This form opens WhatsApp with your message. For backend email storage, connect it later with Formspree, Firebase, Supabase, or your own server.</p>
+          <form class="contact-form" id="contactForm">
+            <div class="field"><label>Your Name</label><input id="name" type="text" placeholder="Enter your name" required></div>
+            <div class="field"><label>Phone Number</label><input id="phone" type="tel" placeholder="Enter phone number" required></div>
+            <div class="field"><label>Message</label><textarea id="message" rows="5" placeholder="I want plot details in Tadepalligudem..." required></textarea></div>
+            <button class="btn btn-primary" type="submit">Send on WhatsApp</button>
+          </form>
+        </div>
+        <div class="card contact-box">
+          <div class="section-kicker">Contact Details</div>
+          <h2 class="section-title">Reach Us</h2>
+          <div class="contact-row"><span>📍</span><div><strong>Office Address</strong><p data-address></p></div></div>
+          <div class="contact-row"><span>📞</span><div><strong>Phone</strong><p><a data-phone-link href="#" data-phone></a></p></div></div>
+          <div class="contact-row"><span>💬</span><div><strong>WhatsApp</strong><p><a data-whatsapp-link target="_blank" href="#">Chat on WhatsApp</a></p></div></div>
+          <div class="contact-row"><span>✉️</span><div><strong>Email</strong><p><a data-email-link href="#" data-email></a></p></div></div>
+          <iframe class="map-frame" data-map loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><h3 data-business-name></h3><p>Trusted local real estate service for plots, houses, lands, apartments, and commercial spaces.</p></div><div><h3>Quick Links</h3><div class="footer-links"><a href="index.html">Home</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div><div><h3>Property Types</h3><div class="footer-links"><a href="properties.html">Plots</a><a href="properties.html">Houses</a><a href="properties.html">Lands</a><a href="properties.html">Commercial</a></div></div><div><h3>Contact</h3><p data-address></p><p data-phone></p><p data-email></p></div></div><div class="container copyright">© <span data-year></span> <span data-business-name></span>. All rights reserved.</div></footer>
+  <a class="float-whatsapp" data-whatsapp-link target="_blank" href="#">💬</a><a class="float-call" data-phone-link href="#">☎</a>
+  <script src="properties.js"></script><script src="app.js"></script>
+</body>
+</html>

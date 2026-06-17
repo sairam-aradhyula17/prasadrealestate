@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties | Prasad Real Estate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar"><div class="container"><span>📍 <span data-address>Tadepalligudem, West Godavari, Andhra Pradesh</span></span><span>📞 <span data-phone>+91 9866830856</span> | ✉️ <span data-email>aradhyulaprasad@gmail.com</span></span></div></div>
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span class="logo-mark">PR</span><span data-business-name>Prasad Real Estate</span></a>
+      <button class="menu-btn" id="menuBtn">Menu</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="btn btn-primary" data-whatsapp-link target="_blank" href="#">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Properties</h1>
+        <p>Search plots, houses, apartments, lands, and commercial spaces by location and budget.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <form class="card filters" id="filterForm">
+        <div class="field"><label>Search</label><input id="keyword" type="text" placeholder="Property name, location, type"></div>
+        <div class="field"><label>Type</label><select id="type"><option value="">All Types</option><option value="Plot">Plot</option><option value="House">House</option><option value="Apartment">Apartment</option><option value="Land">Land</option><option value="Commercial">Commercial</option></select></div>
+        <div class="field"><label>Location</label><input id="location" type="text" placeholder="Ex: Tadepalligudem"></div>
+        <div class="field"><label>Budget</label><select id="budget"><option value="">Any Budget</option><option value="low">Below ₹20 Lakhs</option><option value="mid">₹20L - ₹50L</option><option value="high">Above ₹50 Lakhs</option></select></div>
+        <button class="btn btn-primary" type="submit">Filter</button>
+      </form>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-kicker">Available</div><h2 class="section-title">Property Listings</h2></div>
+        </div>
+        <div class="grid grid-3" id="propertiesGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3 data-business-name></h3><p>Trusted local real estate service for plots, houses, lands, apartments, and commercial spaces.</p></div>
+      <div><h3>Quick Links</h3><div class="footer-links"><a href="index.html">Home</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
+      <div><h3>Property Types</h3><div class="footer-links"><a href="properties.html">Plots</a><a href="properties.html">Houses</a><a href="properties.html">Lands</a><a href="properties.html">Commercial</a></div></div>
+      <div><h3>Contact</h3><p data-address></p><p data-phone></p><p data-email></p></div>
+    </div>
+    <div class="container copyright">© <span data-year></span> <span data-business-name></span>. All rights reserved.</div>
+  </footer>
+
+  <a class="float-whatsapp" data-whatsapp-link target="_blank" href="#">💬</a>
+  <a class="float-call" data-phone-link href="#">☎</a>
+  <script src="properties.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

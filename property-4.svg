@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#e0f2fe"/><stop offset="1" stop-color="#f8fafc"/></linearGradient>
+  </defs>
+  <rect width="900" height="650" fill="url(#sky)"/>
+  <circle cx="735" cy="120" r="60" fill="#fde68a"/>
+  <path d="M0 460 C150 410 260 470 390 430 C540 380 680 445 900 390 L900 650 L0 650 Z" fill="#bbf7d0"/>
+  <path d="M0 505 C210 445 330 530 520 475 C690 425 760 470 900 435 L900 650 L0 650 Z" fill="#2dd4bf" opacity="0.65"/>
+  <rect x="210" y="285" width="360" height="235" rx="24" fill="#ffffff"/>
+  <path d="M180 295 L390 140 L600 295 Z" fill="#7c3aed"/>
+  <rect x="285" y="380" width="90" height="140" rx="10" fill="#312e81"/>
+  <rect x="420" y="360" width="78" height="65" rx="9" fill="#bfdbfe"/>
+  <rect x="610" y="340" width="110" height="180" rx="18" fill="#7c3aed" opacity="0.88"/>
+  <rect x="638" y="375" width="24" height="32" fill="#e0f2fe"/><rect x="680" y="375" width="24" height="32" fill="#e0f2fe"/>
+  <rect x="638" y="430" width="24" height="32" fill="#e0f2fe"/><rect x="680" y="430" width="24" height="32" fill="#e0f2fe"/>
+  <rect x="80" y="540" width="740" height="54" rx="27" fill="#0f172a" opacity="0.78"/>
+  <text x="450" y="576" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" font-weight="700" fill="#ffffff">Commercial Space</text>
+</svg>
